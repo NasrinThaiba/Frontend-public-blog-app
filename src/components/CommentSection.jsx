@@ -8,7 +8,7 @@ function CommentSection({ postId }) {
   const token = localStorage.getItem("token");
 
   const fetchComments = () => {
-    fetch(`http://localhost:5000/api/comments/post/${postId}`)
+    fetch(`https://backend-blog-app-hq13.onrender.com/api/comments/post/${postId}`)
       .then(res => res.json())
       .then(data => setComments(data))
       .catch(err => console.log(err));
@@ -23,7 +23,7 @@ function CommentSection({ postId }) {
 
     if (!comment.trim()) return;
 
-    const res = await fetch(`http://localhost:5000/api/comments/${postId}`,{
+    const res = await fetch(`https://backend-blog-app-hq13.onrender.com/api/comments/${postId}`,{
         method: "POST",
         headers: {
           "Content-Type": "application/json",

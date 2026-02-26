@@ -9,7 +9,7 @@ function PostDetails() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/posts/${id}`)
+    fetch(`https://backend-blog-app-hq13.onrender.com/api/posts/${id}`)
       .then(res => res.json())
       .then(data => setPost(data))
       .catch(err => console.log(err));
