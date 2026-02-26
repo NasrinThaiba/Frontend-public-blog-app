@@ -1,0 +1,84 @@
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #2c3e50;   /* Dark background */
+  color: white;
+  position: relative;
+}
+
+/* ===== LOGO ===== */
+.logo {
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+
+.logo:hover {
+  color: #ecf0f1;
+}
+
+/* ===== ACCOUNT CONTAINER ===== */
+.account-container {
+  position: relative;
+}
+
+/* ===== ACCOUNT BUTTON ===== */
+.account-btn {
+  background: #34495e;
+  border: none;
+  padding: 8px 14px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.account-btn:hover {
+  background: #22313f;
+}
+
+/* ===== DROPDOWN ===== */
+.dropdown {
+  position: absolute;
+  right: 0;
+  top: 45px;
+  background: white;
+  min-width: 160px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 100;
+}
+
+/* ===== DROPDOWN LINKS ===== */
+.dropdown-link {
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  background: white;
+}
+
+.dropdown-link:hover {
+  background: #f0f0f0;
+}
+
+/* ===== LOGOUT BUTTON ===== */
+.logout-btn {
+  padding: 10px;
+  border: none;
+  background: white;
+  text-align: left;
+  color: #333;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background: #f0f0f0;
+}
