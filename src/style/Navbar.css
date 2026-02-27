@@ -1,15 +1,13 @@
-/* ===== NAVBAR ===== */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
-  background: #2c3e50;   /* Dark background */
+  background: #2c3e50;   
   color: white;
   position: relative;
 }
 
-/* ===== LOGO ===== */
 .logo {
   text-decoration: none;
   font-size: 22px;
@@ -21,12 +19,14 @@
   color: #ecf0f1;
 }
 
-/* ===== ACCOUNT CONTAINER ===== */
+
 .account-container {
   position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
-/* ===== ACCOUNT BUTTON ===== */
 .account-btn {
   background: #34495e;
   border: none;
@@ -41,7 +41,22 @@
   background: #22313f;
 }
 
-/* ===== DROPDOWN ===== */
+.admin-link {
+  background: #34495e;
+  border: none;
+  padding: 8px 14px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.admin-link:hover {
+  background: #22313f;
+}
+
 .dropdown {
   position: absolute;
   right: 0;
@@ -56,7 +71,6 @@
   z-index: 100;
 }
 
-/* ===== DROPDOWN LINKS ===== */
 .dropdown-link {
   padding: 10px;
   text-decoration: none;
@@ -69,7 +83,6 @@
   background: #f0f0f0;
 }
 
-/* ===== LOGOUT BUTTON ===== */
 .logout-btn {
   padding: 10px;
   border: none;
@@ -82,3 +95,4 @@
 .logout-btn:hover {
   background: #f0f0f0;
 }
+

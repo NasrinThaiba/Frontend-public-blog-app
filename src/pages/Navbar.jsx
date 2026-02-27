@@ -19,7 +19,15 @@ function Navbar() {
   <nav className="navbar">
     <Link to="/" className="logo">MyBlog</Link>
 
+
+
   <div className="account-container">
+      <a
+      href="https://frontendadminblogapp.netlify.app/"
+      className="admin-link"
+      target="_blank"
+      rel="noopener noreferrer"> Admin Dashboard </a>
+
     <button className="account-btn" onClick={() => setOpen(!open)}> 
       {/* toggle the button from open to close */}
       {username ? username : "Account"}
